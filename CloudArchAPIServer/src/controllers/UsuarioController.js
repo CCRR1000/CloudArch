@@ -10,18 +10,20 @@ const agregarUsuario = async (req, res) => {
         nombre: req.query.nombre,
         apellido: req.query.apellido,
         rol: req.query.rol
-        // usuario: req.body.usuario,
-        // contrasenia: req.body.contrasenia,
-        // nombre: req.body.nombre,
-        // apellido: req.body.apellido,
-        // rol: req.body.rol
     });
     const confirmacion = await insertarUsuario.save();
 
-    DirectorioController.crearDirectorio('Raiz', confirmacion.usuario, confirmacion.usuario);
-    DirectorioController.crearDirectorio('Compartido', confirmacion.usuario, confirmacion.usuario);
+    if (confirmacion != null) {
+        DirectorioController.crearDirectorio('Raiz', confirmacion.usuario, confirmacion.usuario);
+        DirectorioController.crearDirectorio('Compartido', confirmacion.usuario, confirmacion.usuario);
 
-    res.json(confirmacion);
+        res.json(confirmacion);
+    } else {
+        res.json ( {
+            _id: "Denegado"
+        } );
+    }
+    
 };
 
 /** query = usuario, contrasenia */

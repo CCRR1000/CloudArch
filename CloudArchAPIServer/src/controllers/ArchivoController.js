@@ -29,7 +29,14 @@ const Usuario = require('../models/Usuario');
 /** query = nombre, extension, contenido, propietario, ubicacion */
 const nuevoArchivo = async (req, res) => {
     const insercion = await crearArchivo(req.query.nombre, req.query.extension, req.query.contenido, req.query.propietario, req.query.ubicacion);
-    res.json(insercion);
+    // const insercion = await crearArchivo(req.query.nombre, req.query.extension, req.query.contenido, req.query.propietario, req.query.ubicacion);
+    if (insercion != null) {
+        res.json(insercion);
+    } else {
+        res.json ( {
+            _id: "Denegado"
+        } );
+    }
 };
 
 /** query = ruta archivo */
