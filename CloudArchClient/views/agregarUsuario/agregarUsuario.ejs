@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Usuario</title>
+    <link rel="stylesheet" href="./agregarUsuario.css">
+</head>
+<body class="g-background">
+    <form class="form" id="form">
+        <p class="title">Nuevo usuario</p>
+        
+        <div class="flex">
+            <label>
+                <input class="input" type="text" name="nombre" id="nombre" placeholder="" required="">
+                <span>Nombre</span>
+            </label>
+    
+            <label>
+                <input class="input" type="text" name="apellido" id="apellido" placeholder="" required="">
+                <span>Apellido</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" type="text" name="usuario" id="usuario" placeholder="" required="">
+            <span>Usuario</span>
+        </label> 
+            
+        <label>
+            <input class="input" type="text" name="contrasenia" id="contrasenia" placeholder="" required="">
+            <span>Contraseña</span>
+        </label>
+
+        <div class="radio-button-container">
+            <div class="radio-button">
+                <input type="radio" class="radio-button__input" id="ADMINISTRADOR" value="ADMINISTRADOR" name="radio-group">
+                <label class="radio-button__label" for="ADMINISTRADOR">
+                    <span class="radio-button__custom"></span>
+                    Administrador
+                </label>
+            </div>
+            <div class="radio-button">
+                <input type="radio" class="radio-button__input" id="EMPLEADO" value="EMPLEADO" name="radio-group">
+                <label class="radio-button__label" for="EMPLEADO">
+                    <span class="radio-button__custom"></span>
+                    Empleado
+                </label>
+            </div>
+        </div>
+        
+        <button class="submit" type="submit">Agregar</button>
+        
+    </form>
+</body>
+
+<script src="agregarUsuario.js"></script>
+</html>

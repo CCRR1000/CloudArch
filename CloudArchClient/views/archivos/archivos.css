@@ -1,0 +1,29 @@
+.cuerpo-pagina {
+        
+    background: linear-gradient(to bottom, #353535, #494949);
+}
+.tabla {
+    width: 85%;
+    height: 90vh;
+    position: fixed;
+    padding: 25px;
+    right: 0;
+    top: 10vh;
+    overflow-y: auto;
+    /* background-image: url("solo\ un\ geek.jpg"); */
+    /* background: linear-gradient(to bottom, rgb(63, 63, 63), rgb(163, 163, 163)); */
+}
+.contenido {
+    display: flex; 
+    margin: 0;
+    position: right;
+    background: linear-gradient(to bottom, #353535, #494949);
+}
+th, td {
+    width: 25dvw;
+    height: 35px;
+    text-align: center;
+    border-bottom: 15px ;
+    border-color: black;
+    color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudArch</title>
+    <link rel="stylesheet" href="archivos.css">
+</head>
+<body>
+    <%- include('../complementos/navbar.ejs'); %>
+    <div class="cuerpo-pagina">
+        <div class="tabla">
+            <P><b>Ruta:</b> user/carpeta/carpeta</P>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Propietario</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Archivo</td>
+                        <td>TXT</td>
+                        <td>user</td>
+                        <td>01/11/2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <%- include('../complementos/sidebar.ejs'); %>
+</body>
+</html>
