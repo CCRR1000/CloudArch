@@ -8,6 +8,7 @@
 </head>
 <body>
     <%- include('../complementos/navbar.ejs'); %>
+    <% %>
     <div class="cuerpo-pagina">
         <div class="tabla">
             <P><b>Ruta:</b> user/carpeta/carpeta</P>
@@ -22,7 +23,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Archivo</td>
+                        <td><% usuario. %></td>
                         <td>TXT</td>
                         <td>user</td>
                         <td>01/11/2023</td>
@@ -32,6 +33,7 @@
             
         </div>
     </div>
+
     <%- include('../complementos/sidebar.ejs'); %>
 </body>
 </html>

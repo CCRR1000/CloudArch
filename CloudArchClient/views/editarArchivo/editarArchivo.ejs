@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar archivo</title>
+    <link rel="stylesheet" href="editarArchivo.css">
+</head>
+<body class="g-background">
+    <div class="form-container">
+        <form class="form" id="form">
+          <div class="form-group">
+            <label for="nombreArchivo">Nombre de archivo</label>
+            <input type="text" id="nombre" name="nombre" required="">
+          </div>
+          <div class="radio-buttons-container">
+                <div class="radio-button">
+                <input name="radio-group" id="txt" value="txt" class="radio-button__input" type="radio">
+                <label for="radio2" class="radio-button__label">
+                    <span class="radio-button__custom"></span>
+                        txt
+                </label>
+                </div>
+                
+                <div class="radio-button">
+                <input name="radio-group" id="html" value="html" class="radio-button__input" type="radio">
+                <label for="radio3" class="radio-button__label">
+                    <span class="radio-button__custom"></span>
+                        html
+                </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nombreArchivo">Propietario</label>
+                <input type="text" id="usuario" name="usuario" required="">
+              </div>
+              <div class="form-group">
+                <label for="nombreArchivo">Ubicacion de archivo</label>
+                <input type="text" id="ubicacion" name="ubicacion" required="">
+              </div>
+          <div class="form-group">
+            <label for="textarea"></label>
+            <textarea name="contenido" id="contenido" rows="100" cols="100" required="">          </textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Guardar</button>
+        </form>
+      </div>
+</body>
+
+<script src="editarArchivo.js"></script>
+</html>
